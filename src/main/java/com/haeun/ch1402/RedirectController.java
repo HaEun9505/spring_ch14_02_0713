@@ -15,7 +15,7 @@ public class RedirectController {
 		if(id.equals("tiger")) {
 			model.addAttribute("id", id);
 			return "redirect:studentOk";
-			//redirect가 있으면 새로운 studentOk를 반환(아예 다른 페이지로 이동) ->  404에러
+			//redirect가 있으면 새로운 studentOk를 반환(아예 다른 페이지로 이동) -> 404에러
 			//모델 객체 전달 x
 		}
 		model.addAttribute("id", "Fail!!");
